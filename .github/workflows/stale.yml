@@ -1,0 +1,14 @@
+name: Stale
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+permissions: {}
+
+jobs:
+  stale:
+    uses: hoverkraft-tech/ci-github-common/.github/workflows/stale.yml@0.30.2
+    permissions:
+      issues: write
+      pull-requests: write

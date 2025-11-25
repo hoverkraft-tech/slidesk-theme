@@ -1,0 +1,55 @@
+name: Internal - Main - Continuous Integration
+
+on:
+  push:
+    branches: [main]
+    tags: ["*"]
+
+permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    uses: ./.github/workflows/__shared-ci.yml
+    secrets: inherit
+    permissions:
+      actions: read
+      contents: read
+      packages: read
+      pull-requests: write
+      id-token: write
+      security-events: write
+      statuses: write
+
+  deploy:
+    if: github.ref_name == github.event.repository.default_branch
+    name: Deploy example slides
+    needs: ci
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-output
+          path: build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

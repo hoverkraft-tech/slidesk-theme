@@ -1,0 +1,21 @@
+/::
+custom_css: hoverkraft.css
+::/
+
+## TITLE .[title-slide]
+
+## Default Slide
+
+This is a default slide with the Hoverkraft theme.
+
+!include(split.sdf)
+
+!include(split_percent.sdf)
+
+!include(title_top.sdf)
+
+!include(text_left.sdf)
+
+!include(dark.sdf)
+
+!include(accent.sdf)

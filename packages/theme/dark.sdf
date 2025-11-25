@@ -1,0 +1,10 @@
+## Dark Theme Slide .[dark-slide]
+
+A slide with dark background for emphasis or to highlight code.
+
+```javascript
+const hoverkraft = {
+  theme: "slidesk",
+  version: "1.0.0",
+};
+```

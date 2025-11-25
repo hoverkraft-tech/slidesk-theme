@@ -1,0 +1,21 @@
+## Custom Split Layout .[split]
+
+<div class="content">
+
+<div style="flex: 1;">
+
+### Smaller Column
+
+30% width content.
+
+</div>
+
+<div style="flex: 2;">
+
+### Larger Column
+
+70% width content with more space for detailed information.
+
+</div>
+
+</div>
