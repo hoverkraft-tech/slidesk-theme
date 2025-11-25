@@ -1,0 +1,10 @@
+---
+extends: default
+
+ignore:
+  - pnpm-lock.yaml
+  - package-lock.json
+
+rules:
+  line-length:
+    max: 170

@@ -1,0 +1,124 @@
+/::
+custom_css: hoverkraft.css
+::/
+
+## Hoverkraft SliDesk Theme .[title-slide]
+
+Official theme for SliDesk presentations
+
+Powered by Hoverkraft
+
+## About This Theme .[text-left]
+
+The Hoverkraft SliDesk Theme provides a consistent, branded experience.
+
+- Follows Hoverkraft branding guidelines
+- Responsive and accessible design
+- Multiple slide layouts included
+- Easy to customize and extend
+
+## Color Palette .[split]
+
+<div class="content">
+
+<div>
+
+### Primary Colors
+
+Primary Blue - 0066CC
+
+Dark Blue - 004499
+
+Accent Teal - 00CC99
+
+</div>
+
+<div>
+
+### Supporting Colors
+
+Light Background - F5F7FA
+
+Dark Background - 1A1A2E
+
+Text Dark - 333333
+
+</div>
+
+</div>
+
+## Typography .[title-top]
+
+The theme uses the Inter font family for optimal readability.
+
+### Headings
+
+Clean, bold headings for structure
+
+### Body Text
+
+Comfortable line-height for extended reading
+
+## Code Example .[dark-slide]
+
+Use dark slides for code examples and emphasis.
+
+This slide has a dark navy background.
+
+## Split Layout .[split]
+
+<div class="content">
+
+<div>
+
+### Left Side
+
+Perfect for comparing options and side-by-side content.
+
+</div>
+
+<div>
+
+### Right Side
+
+Flexible columns that automatically adjust to your content.
+
+</div>
+
+</div>
+
+## Features .[steps]
+
+- Consistent Branding - All slides follow Hoverkraft guidelines
+- Multiple Layouts - Split, title-top, text-left, and more
+- Dark Mode - Built-in dark slide variant
+- Step Animations - Progressive content reveal
+- Accessible - High contrast and readable fonts
+
+## Quote Example
+
+> Good design is as little design as possible.
+>
+> Dieter Rams
+
+The Hoverkraft theme embraces simplicity.
+
+## Getting Started .[text-left]
+
+1. Install the theme package
+
+2. Reference the CSS in your presentation
+
+3. Start creating your slides
+
+## Key Takeaway .[accent-slide]
+
+Build beautiful, branded presentations with ease.
+
+Use the Hoverkraft SliDesk theme for consistent, professional slides.
+
+## Thank You .[title-slide]
+
+### Questions?
+
+Visit github.com/hoverkraft-tech/slidesk-theme

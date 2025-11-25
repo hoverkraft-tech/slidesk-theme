@@ -1,0 +1,21 @@
+## Split Layout .[split]
+
+<div class="content">
+
+<div>
+
+### Left Column
+
+Content on the left side of the slide.
+
+</div>
+
+<div>
+
+### Right Column
+
+Content on the right side of the slide.
+
+</div>
+
+</div>
