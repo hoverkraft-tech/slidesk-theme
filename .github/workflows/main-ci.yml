@@ -38,12 +38,12 @@ jobs:
     outputs:
       page-url: ${{ steps.deployment.outputs.url }}
     steps:
-      - uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
+      - uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7.0.0
         with:
           artifact-ids: ${{ needs.ci.outputs.build-artifact-id }}
           path: ${{ needs.ci.outputs.build-path }}
 
       - id: deployment
-        uses: hoverkraft-tech/ci-github-publish/actions/deploy/github-pages@ed864a88ec8610dc2a1b9aab1dbde2864bf75df4 # 0.16.0
+        uses: hoverkraft-tech/ci-github-publish/actions/deploy/github-pages@44e0f1bacebf3711bf90895fc45d815e9fe582e8 # 0.18.0
         with:
           build-path: ${{ needs.ci.outputs.build-path }}
